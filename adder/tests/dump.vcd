@@ -1,0 +1,59 @@
+$date
+	Wed Feb 23 21:55:11 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module adder $end
+$var wire 4 ! A [3:0] $end
+$var wire 4 " B [3:0] $end
+$var wire 5 # X [4:0] $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1111 #
+b1010 "
+b101 !
+$end
+#2001
+b1110 !
+b10001 #
+b11 "
+#4001
+b10111 #
+b1001 "
+#6001
+b1 !
+b110 #
+b101 "
+#8001
+b110 !
+b110 #
+b0 "
+#10001
+b1 #
+b1 !
+#12001
+b1010 !
+b1110 #
+b100 "
+#14001
+b10101 #
+b1011 "
+#16001
+b110 !
+b1111 #
+b1001 "
+#18001
+b111 !
+b10101 #
+b1110 "
+#20001
+b1 !
+b1000 #
+b111 "
+#22002
