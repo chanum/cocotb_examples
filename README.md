@@ -23,6 +23,7 @@ Waveform viewer: gtkwave
 ## Run Test
 
 > cd cocotb_examples/adder/tests
+
 > make
 
 Change the RTL source language and compiler in Makefile:
