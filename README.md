@@ -28,12 +28,12 @@ Waveform viewer: gtkwave
 Change the RTL source language and compiler in Makefile:
 
 VERILOG
-# TOPLEVEL_LANG: verilog 
-# SIM : icarus  
+- TOPLEVEL_LANG: verilog 
+-  SIM : icarus  
 
 VHDL
-# TOPLEVEL_LANG: vhdl
-# SIM : ghdl
+-  TOPLEVEL_LANG: vhdl
+- SIM : ghdl
 
 
 
