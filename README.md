@@ -20,6 +20,21 @@ Simulators Cocotb [notes](https://docs.cocotb.org/en/stable/simulator_support.ht
 Waveform viewer: gtkwave
 > sudo apt install gtkwave
 
+## Run Test
+
+> cd cocotb_examples/adder/tests
+> make
+
+Change the RTL source language and compiler in Makefile:
+
+VERILOG
+# TOPLEVEL_LANG: verilog 
+# SIM : icarus  
+
+VHDL
+# TOPLEVEL_LANG: vhdl
+# SIM : ghdl
+
 
 
 
