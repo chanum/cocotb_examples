@@ -1,4 +1,4 @@
-# cocotb_examples
+# cocotb_examples (Cocotb + Icarus Verilog/GHDL +  GTKWave)
 
 ## Setup 
 
