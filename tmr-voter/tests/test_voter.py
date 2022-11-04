@@ -4,24 +4,31 @@ import random
 from voter_model import voter_model
 
 import cocotb
-from cocotb.triggers import Timer
-
+from cocotb.clock import Clock
+from cocotb.triggers import RisingEdge, FallingEdge, Timer, ClockCycles
 
 @cocotb.test()
 async def voter_basic_test(dut):
-    """Test for 1 1 0 """
-
+    dut._log.info("start")
     A = 1
     B = 1
     C = 0
+
+    clock = Clock(dut.clock, 10, units="ns")
+    cocotb.fork(clock.start())
+    
+    dut._log.info("reset")
+    dut.reset_in.value = 1
+    await ClockCycles(dut.clock, 10)
+    dut.reset_in.value = 0
 
     dut.a_in.value = A
     dut.b_in.value = B
     dut.c_in.value = C
 
-    await Timer(2, units="ns")
+    await Timer(100, units="ns")
 
-    assert dut.X.value == tmr_model(
+    assert dut.v_out.value == voter_model(
         A, B, C
     ), f"Voter result is incorrect: {dut.v_out.value} != 1"
 

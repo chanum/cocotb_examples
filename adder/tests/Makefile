@@ -1,7 +1,7 @@
 # TOPLEVEL_LANG: vhdl - verilog 
 # SIM : ghdl - icarus  
 
-TOPLEVEL_LANG ?= vhdl
+TOPLEVEL_LANG ?= verilog
 
 PWD=$(shell pwd)
 

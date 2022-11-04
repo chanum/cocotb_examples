@@ -16,7 +16,7 @@ module adder #(
   // Dump waves
   initial begin
     $dumpfile("dump.vcd");
-    $dumpvars(1, adder);
+    $dumpvars(0, adder);
   end
 
 endmodule

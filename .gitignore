@@ -1,1 +1,4 @@
 __*
+sim_build
+*.vcd
+results.xml
