@@ -36,6 +36,8 @@ VHDL
 -  TOPLEVEL_LANG: vhdl
 - SIM : ghdl
 
+## Open the waveform 
 
+> gtkwave -f dump.vcd
 
 
